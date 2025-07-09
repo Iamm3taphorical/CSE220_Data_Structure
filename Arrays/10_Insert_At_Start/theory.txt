@@ -1,0 +1,60 @@
+ARRAY INSERT AT START - THEORY AND CONCEPTS
+===========================================
+
+DEFINITION:
+Inserting at the start of an array means adding a new element at index 0, which requires shifting all existing elements one position to the right to make room for the new element.
+
+FUNDAMENTAL CONCEPTS:
+1. Element Shifting: All existing elements must move one position right
+2. Array Expansion: New array size = original size + 1
+3. Index Management: Original element at index i moves to index i+1
+4. Memory Reallocation: New array must be created due to fixed size
+
+INSERT AT START PROCESS:
+1. Create new array with size = original size + 1
+2. Insert new element at index 0
+3. Copy all original elements starting from index 1
+4. Return the new expanded array
+
+USE CASES:
+1. Stack Operations: Adding elements to the top of a stack
+2. Queue Operations: Adding elements to the front of a queue
+3. Undo Operations: Adding new actions to the beginning of history
+4. Priority Systems: Inserting high-priority items at the front
+5. Data Streaming: Adding new data points at the beginning
+6. Algorithm Implementation: Building data structures incrementally
+
+PROBLEM-SOLVING INTUITION:
+- When new elements have highest priority: Insert at start
+- When implementing LIFO (Last In, First Out) behavior: Insert at start
+- When building sequences where newest items should be first: Insert at start
+- When implementing prepend operations: Insert at start
+
+INSERT AT START ALGORITHM:
+1. Validate input parameters
+2. Create new array with increased size
+3. Place new element at index 0
+4. Shift all original elements one position right
+5. Return new array with inserted element
+
+TIME COMPLEXITY: O(n) where n is the number of existing elements
+SPACE COMPLEXITY: O(n) for the new array
+
+REAL-WORLD ANALOGIES:
+- Adding a new person to the front of a queue
+- Inserting a new card at the top of a deck
+- Adding a new item to the beginning of a shopping list
+- Placing a new book at the front of a bookshelf
+
+COMMON PITFALLS:
+1. Array Bounds: Forgetting to create larger array
+2. Shifting Direction: Incorrectly shifting elements left instead of right
+3. Index Confusion: Starting copy from wrong index
+4. Memory Management: Not properly handling array references
+5. Edge Cases: Not handling empty arrays correctly
+
+EFFICIENCY CONSIDERATIONS:
+- Insert at start is expensive O(n) operation
+- Consider using linked lists if frequent insertions at start
+- For multiple insertions, consider batch operations
+- Alternative: Use deque data structure for efficient front operations

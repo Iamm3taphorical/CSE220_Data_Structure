@@ -1,0 +1,114 @@
+STACK PUSH AND POP OPERATIONS - THEORY AND CONCEPTS
+====================================================
+
+DEFINITION:
+A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. Elements are added and removed from only one end, called the top of the stack.
+
+FUNDAMENTAL OPERATIONS:
+1. Push: Add an element to the top of the stack
+2. Pop: Remove and return the top element from the stack
+3. Peek/Top: View the top element without removing it
+4. isEmpty: Check if the stack is empty
+5. isFull: Check if the stack is full (for fixed-size stacks)
+
+STACK CHARACTERISTICS:
+- LIFO (Last In, First Out) principle
+- Single-ended access (only top element accessible)
+- Dynamic size (can grow and shrink)
+- No random access to middle elements
+
+PUSH OPERATION:
+1. Check if stack is full (for fixed-size stacks)
+2. Increment the top pointer
+3. Insert the new element at the top position
+4. Update size counter
+
+POP OPERATION:
+1. Check if stack is empty
+2. Retrieve the top element
+3. Decrement the top pointer
+4. Update size counter
+5. Return the retrieved element
+
+IMPLEMENTATION METHODS:
+1. Array-based Stack:
+   - Fixed or dynamic array
+   - Top pointer tracks the last element
+   - Simple index-based operations
+
+2. Linked List-based Stack:
+   - Dynamic size
+   - Head of list is the top of stack
+   - Node-based memory allocation
+
+USE CASES:
+1. Function Calls: Managing function call stack
+2. Expression Evaluation: Parsing mathematical expressions
+3. Undo Operations: Text editors, games
+4. Backtracking: Maze solving, tree traversal
+5. Memory Management: Stack allocation
+6. Browser History: Back button functionality
+7. Compiler Design: Syntax analysis
+
+PROBLEM-SOLVING INTUITION:
+- When you need to reverse order: Use stack
+- When implementing recursion iteratively: Use stack
+- When parsing nested structures: Use stack
+- When you need to backtrack: Use stack
+
+ADVANTAGES:
+1. Simple implementation
+2. Efficient push/pop operations O(1)
+3. Memory efficient
+4. Natural for recursive problems
+5. Thread-safe implementations possible
+
+DISADVANTAGES:
+1. No random access to elements
+2. Limited functionality compared to arrays
+3. Stack overflow possibility
+4. Only top element accessible
+
+TIME COMPLEXITY:
+- Push: O(1)
+- Pop: O(1)
+- Peek: O(1)
+- isEmpty: O(1)
+- isFull: O(1)
+
+SPACE COMPLEXITY:
+- Array-based: O(n) where n is maximum capacity
+- Linked List-based: O(n) where n is current size
+
+STACK OVERFLOW AND UNDERFLOW:
+- Stack Overflow: Attempting to push onto a full stack
+- Stack Underflow: Attempting to pop from an empty stack
+- Both conditions require proper error handling
+
+REAL-WORLD ANALOGIES:
+- Stack of plates in a cafeteria
+- Stack of books on a desk
+- Stack of papers in a tray
+- Undo/Redo functionality in applications
+
+COMMON PITFALLS:
+1. Not checking for empty stack before popping
+2. Not handling stack overflow in fixed-size stacks
+3. Memory leaks in linked list implementation
+4. Incorrect top pointer management
+5. Not maintaining size counter properly
+
+BEST PRACTICES:
+1. Always check stack conditions before operations
+2. Use appropriate data structure for your needs
+3. Handle edge cases properly
+4. Maintain consistent state
+5. Document capacity limits
+6. Use descriptive method names
+
+VARIATIONS:
+1. Fixed-size stack with array
+2. Dynamic stack with linked list
+3. Resizable array stack
+4. Thread-safe stack
+5. Generic stack for any data type

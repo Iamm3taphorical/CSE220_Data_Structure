@@ -1,0 +1,42 @@
+COPY AND PASTE BY VALUE - THEORY AND CONCEPTS
+=========================================================
+
+DEFINITION:
+Copying and pasting by value involves duplicating data from one array to another, where each element is copied individually creating an independent copy.
+
+FUNDAMENTAL CONCEPTS:
+1. Value-Based Duplication: Each element in the original array is copied to a new array
+2. Independence: Changes in the new array do not affect the original
+3. Memory Allocation: New memory space is allocated for the new array
+
+USE CASES:
+1. Data Backup: Creating backups of data
+2. Data Isolation: Ensuring changes don't affect original data
+3. Immutable Operations: Performing operations without modifying original
+4. Undo Mechanisms: Reverting to previous states
+5. Parallel Computation: Working with data in separate threads
+6. Simulation and Testing: Using copies to simulate scenarios without real changes
+
+PROBLEM-SOLVING INTUITION:
+- When you need a complete duplicate: Use copy by value
+- When making non-destructive modifications: Copy first, then modify new copy
+- When working with read-only datasets: Create copies for testing and simulations
+
+COPY BY VALUE OPERATIONS:
+1. Allocate new array with same size
+2. Copy each element from original array to new array
+3. Return the new array with duplicated values
+
+TIME COMPLEXITY: O(n) where n is the number of elements to copy
+SPACE COMPLEXITY: O(n) for the new array
+
+REAL-WORLD ANALOGIES:
+- Photocopying a document
+- Cloning a tree from a branch cutting
+- Mirroring files from one folder to another
+
+BEST PRACTICES:
+1. Ensure complete independence by avoiding shared references
+2. Consider memory constraints when duplicating large arrays
+3. Validate both arrays after copying to prevent data corruption
+4. Document the purpose and scope of copied data to maintain clarity

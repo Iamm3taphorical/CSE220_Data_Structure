@@ -1,0 +1,44 @@
+ARRAY ITERATION - THEORY AND CONCEPTS
+===============================================
+
+DEFINITION:
+Array iteration is the process of accessing each element of an array sequentially, typically using loops to traverse from the first element to the last element (or vice versa).
+
+FUNDAMENTAL CONCEPTS:
+1. Sequential Access: Elements are accessed one after another in a defined order
+2. Index-based Access: Each element is accessed using its index position
+3. Boundary Awareness: Iteration must respect array bounds (0 to length-1)
+
+TYPES OF ITERATION:
+1. Forward Iteration: From index 0 to length-1
+2. Backward Iteration: From index length-1 to 0
+3. Conditional Iteration: Accessing elements based on specific conditions
+
+USE CASES:
+1. Data Processing: Performing operations on each element
+2. Search Operations: Finding specific elements or patterns
+3. Validation: Checking if all elements meet certain criteria
+4. Aggregation: Calculating sums, averages, or other statistics
+5. Display: Printing or displaying array contents
+6. Transformation: Converting each element to a new form
+
+PROBLEM-SOLVING INTUITION:
+- When you need to examine every element: Use complete iteration
+- When you need to find something specific: Use conditional iteration with early termination
+- When you need to process in reverse order: Use backward iteration
+- When you need to process pairs or groups: Use iteration with controlled step size
+
+TIME COMPLEXITY: O(n) where n is the number of elements
+SPACE COMPLEXITY: O(1) for the iteration process itself
+
+REAL-WORLD ANALOGIES:
+- Reading a book page by page
+- Checking each item in a shopping list
+- Visiting each house on a street
+- Reviewing each student's assignment in a class
+
+COMMON PITFALLS:
+1. Index Out of Bounds: Accessing array[length] instead of array[length-1]
+2. Off-by-One Errors: Starting from index 1 instead of 0
+3. Infinite Loops: Incorrect loop conditions
+4. Modifying array size during iteration in dynamic scenarios

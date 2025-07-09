@@ -1,0 +1,77 @@
+ARRAY RESIZE - THEORY AND CONCEPTS
+====================================
+
+DEFINITION:
+Array resizing is the process of changing the size (capacity) of an array, either expanding it to accommodate more elements or shrinking it to save memory. Since arrays have fixed size in Java, resizing involves creating a new array and copying elements.
+
+FUNDAMENTAL CONCEPTS:
+1. Fixed Size Nature: Arrays in Java have immutable size once created
+2. Memory Allocation: New array requires fresh memory allocation
+3. Element Preservation: Existing elements must be copied to new array
+4. Reference Update: Original array reference must point to new array
+
+TYPES OF RESIZING:
+1. Expansion: Increasing array size (growing)
+2. Contraction: Decreasing array size (shrinking)
+3. Dynamic Resizing: Automatic size adjustment based on usage patterns
+
+RESIZE STRATEGIES:
+1. Exact Resize: New size exactly matches requirement
+2. Multiplicative Growth: Double the size (common strategy)
+3. Additive Growth: Add fixed amount to current size
+4. Geometric Growth: Increase by percentage (e.g., 1.5x)
+
+USE CASES:
+1. Dynamic Arrays: Implementing resizable data structures
+2. Memory Optimization: Reducing unused space
+3. Capacity Management: Handling varying data loads
+4. Buffer Management: Adjusting buffer sizes based on usage
+5. Data Structure Implementation: ArrayList, Vector, etc.
+6. Real-time Systems: Adapting to changing requirements
+
+PROBLEM-SOLVING INTUITION:
+- When array is full and need to add more elements: Expand
+- When array is mostly empty: Contract to save memory
+- When implementing dynamic data structures: Use growth strategies
+- When memory is limited: Implement efficient resizing policies
+
+RESIZE OPERATIONS:
+1. Create new array with desired size
+2. Copy existing elements to new array
+3. Handle boundary conditions (size limits)
+4. Update references to point to new array
+5. Allow garbage collection of old array
+
+TIME COMPLEXITY:
+- Resize Operation: O(n) where n is number of elements to copy
+- Amortized Analysis: O(1) for dynamic arrays with good growth strategy
+
+SPACE COMPLEXITY:
+- Temporary: O(n) for new array during resize
+- Permanent: O(new_size) after resize completion
+
+REAL-WORLD ANALOGIES:
+- Moving to a bigger/smaller house and packing belongings
+- Expanding/reducing parking lot capacity
+- Adjusting restaurant seating based on crowd size
+- Scaling server capacity based on traffic
+
+GROWTH STRATEGIES COMPARISON:
+1. Linear Growth (+k): Simple but inefficient for large datasets
+2. Exponential Growth (2x): Fast but may waste memory
+3. Fibonacci Growth: Balance between speed and memory
+4. Golden Ratio Growth (1.618x): Optimal for many scenarios
+
+COMMON PITFALLS:
+1. Memory Leaks: Not properly releasing old array references
+2. Index Out of Bounds: Accessing beyond new array size
+3. Inefficient Growth: Using linear growth for large datasets
+4. Excessive Resizing: Frequent resize operations hurting performance
+5. Null Pointer Exceptions: Not handling null arrays properly
+
+BEST PRACTICES:
+1. Use appropriate growth factor (typically 1.5x to 2x)
+2. Implement shrinking when utilization drops below threshold
+3. Consider memory constraints when choosing growth strategy
+4. Handle edge cases (empty arrays, null references)
+5. Document resize policy for maintainability

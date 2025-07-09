@@ -1,0 +1,53 @@
+ARRAY RIGHT SHIFT - THEORY AND CONCEPTS
+==========================================
+
+DEFINITION:
+Array right shift moves all elements in an array to the right by a specified number of positions. Elements that would go beyond the array boundary are typically lost or wrapped around, depending on the implementation.
+
+FUNDAMENTAL CONCEPTS:
+1. Element Movement: Each element moves to a higher index position
+2. Boundary Handling: Elements at the end need special consideration
+3. Position Calculation: New position = current position + shift amount
+4. Data Loss: Elements that shift beyond array bounds are lost
+
+TYPES OF RIGHT SHIFT:
+1. Linear Shift: Elements that go beyond bounds are lost
+2. Circular Shift: Elements wrap around to the beginning
+3. Shift with Fill: Empty positions are filled with default values
+
+USE CASES:
+1. Data Processing: Implementing delay lines in signal processing
+2. Animation: Creating sliding effects in graphics
+3. Buffer Management: Implementing circular buffers
+4. Cryptography: Bit manipulation in encryption algorithms
+5. Game Development: Moving game objects or implementing scrolling
+6. Algorithm Implementation: Used in sorting and searching algorithms
+
+PROBLEM-SOLVING INTUITION:
+- When you need to create space at the beginning: Use right shift
+- When implementing circular data structures: Use circular right shift
+- When simulating time-based delays: Use right shift with fill
+- When reorganizing data for processing: Use right shift operations
+
+SHIFT OPERATIONS:
+1. Determine shift amount and direction
+2. Handle boundary conditions
+3. Move elements to new positions
+4. Fill empty positions if needed
+5. Handle wraparound for circular shifts
+
+TIME COMPLEXITY: O(n) where n is the number of elements
+SPACE COMPLEXITY: O(1) for in-place shift, O(n) for new array
+
+REAL-WORLD ANALOGIES:
+- People shifting seats to the right in a theater row
+- Moving items on a conveyor belt
+- Sliding tiles in a puzzle game
+- Advancing frames in a film reel
+
+COMMON PITFALLS:
+1. Index Out of Bounds: Not handling array boundaries properly
+2. Data Loss: Forgetting that elements can be lost in linear shifts
+3. Shift Amount Validation: Not handling negative or excessive shift amounts
+4. Empty Position Handling: Not filling empty positions appropriately
+5. Circular Logic Errors: Incorrect wraparound calculations

@@ -1,0 +1,30 @@
+07_ROTATE_RIGHT - THEORY AND CONCEPTS
+==================================================
+
+DEFINITION:
+[Description of 07_Rotate_Right operation]
+
+FUNDAMENTAL CONCEPTS:
+1. [Key concept 1]
+2. [Key concept 2]
+3. [Key concept 3]
+
+USE CASES:
+1. [Use case 1]
+2. [Use case 2]
+3. [Use case 3]
+
+PROBLEM-SOLVING INTUITION:
+- [When to use this operation]
+- [How it helps solve problems]
+
+TIME COMPLEXITY: O(?)
+SPACE COMPLEXITY: O(?)
+
+REAL-WORLD ANALOGIES:
+- [Analogy 1]
+- [Analogy 2]
+
+COMMON PITFALLS:
+1. [Pitfall 1]
+2. [Pitfall 2]
