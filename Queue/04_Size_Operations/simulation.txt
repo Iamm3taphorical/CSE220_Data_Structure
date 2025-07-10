@@ -1,0 +1,42 @@
+================================================================================
+                        04 SIZE OPERATIONS - STEP-BY-STEP SIMULATION
+================================================================================
+
+OVERVIEW:
+This simulation demonstrates how 04 size operations works internally, showing
+each step of the process with detailed explanations and memory representations.
+
+TOPIC: Queue
+OPERATION: 04 Size Operations
+
+Detailed step-by-step simulation for 04_Size_Operations will be added here.
+
+================================================================================
+                              PERFORMANCE ANALYSIS
+================================================================================
+
+TIME COMPLEXITY:
+O(n) - Analysis will be provided based on specific operation
+
+SPACE COMPLEXITY:
+O(1) - Analysis will be provided based on specific operation
+
+================================================================================
+                               PRACTICAL APPLICATIONS
+================================================================================
+
+Real-world applications of 04_Size_Operations in Queue will be listed here.
+
+================================================================================
+                              BEST PRACTICES
+================================================================================
+
+Best practices for implementing 04_Size_Operations efficiently.
+
+================================================================================
+                             COMMON PITFALLS
+================================================================================
+
+Common mistakes to avoid when implementing 04_Size_Operations.
+
+================================================================================

@@ -1,0 +1,42 @@
+================================================================================
+                        38 CUMULATIVE SUM PRODUCT - STEP-BY-STEP SIMULATION
+================================================================================
+
+OVERVIEW:
+This simulation demonstrates how 38 cumulative sum product works internally, showing
+each step of the process with detailed explanations and memory representations.
+
+TOPIC: Arrays
+OPERATION: 38 Cumulative Sum Product
+
+Detailed step-by-step simulation for 38_Cumulative_Sum_Product will be added here.
+
+================================================================================
+                              PERFORMANCE ANALYSIS
+================================================================================
+
+TIME COMPLEXITY:
+O(n) - Analysis will be provided based on specific operation
+
+SPACE COMPLEXITY:
+O(1) - Analysis will be provided based on specific operation
+
+================================================================================
+                               PRACTICAL APPLICATIONS
+================================================================================
+
+Real-world applications of 38_Cumulative_Sum_Product in Arrays will be listed here.
+
+================================================================================
+                              BEST PRACTICES
+================================================================================
+
+Best practices for implementing 38_Cumulative_Sum_Product efficiently.
+
+================================================================================
+                             COMMON PITFALLS
+================================================================================
+
+Common mistakes to avoid when implementing 38_Cumulative_Sum_Product.
+
+================================================================================

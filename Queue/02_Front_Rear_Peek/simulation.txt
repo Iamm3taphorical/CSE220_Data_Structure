@@ -1,0 +1,42 @@
+================================================================================
+                        02 FRONT REAR PEEK - STEP-BY-STEP SIMULATION
+================================================================================
+
+OVERVIEW:
+This simulation demonstrates how 02 front rear peek works internally, showing
+each step of the process with detailed explanations and memory representations.
+
+TOPIC: Queue
+OPERATION: 02 Front Rear Peek
+
+Detailed step-by-step simulation for 02_Front_Rear_Peek will be added here.
+
+================================================================================
+                              PERFORMANCE ANALYSIS
+================================================================================
+
+TIME COMPLEXITY:
+O(n) - Analysis will be provided based on specific operation
+
+SPACE COMPLEXITY:
+O(1) - Analysis will be provided based on specific operation
+
+================================================================================
+                               PRACTICAL APPLICATIONS
+================================================================================
+
+Real-world applications of 02_Front_Rear_Peek in Queue will be listed here.
+
+================================================================================
+                              BEST PRACTICES
+================================================================================
+
+Best practices for implementing 02_Front_Rear_Peek efficiently.
+
+================================================================================
+                             COMMON PITFALLS
+================================================================================
+
+Common mistakes to avoid when implementing 02_Front_Rear_Peek.
+
+================================================================================

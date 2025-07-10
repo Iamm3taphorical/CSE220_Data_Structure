@@ -1,0 +1,42 @@
+================================================================================
+                        18 SWAP NODES - STEP-BY-STEP SIMULATION
+================================================================================
+
+OVERVIEW:
+This simulation demonstrates how 18 swap nodes works internally, showing
+each step of the process with detailed explanations and memory representations.
+
+TOPIC: LinkedLists
+OPERATION: 18 Swap Nodes
+
+Detailed step-by-step simulation for 18_Swap_Nodes will be added here.
+
+================================================================================
+                              PERFORMANCE ANALYSIS
+================================================================================
+
+TIME COMPLEXITY:
+O(n) - Analysis will be provided based on specific operation
+
+SPACE COMPLEXITY:
+O(1) - Analysis will be provided based on specific operation
+
+================================================================================
+                               PRACTICAL APPLICATIONS
+================================================================================
+
+Real-world applications of 18_Swap_Nodes in LinkedLists will be listed here.
+
+================================================================================
+                              BEST PRACTICES
+================================================================================
+
+Best practices for implementing 18_Swap_Nodes efficiently.
+
+================================================================================
+                             COMMON PITFALLS
+================================================================================
+
+Common mistakes to avoid when implementing 18_Swap_Nodes.
+
+================================================================================

@@ -1,0 +1,42 @@
+================================================================================
+                        05 SHIFTING LEFT - STEP-BY-STEP SIMULATION
+================================================================================
+
+OVERVIEW:
+This simulation demonstrates how 05 shifting left works internally, showing
+each step of the process with detailed explanations and memory representations.
+
+TOPIC: Arrays
+OPERATION: 05 Shifting Left
+
+Detailed step-by-step simulation for 05_Shifting_Left will be added here.
+
+================================================================================
+                              PERFORMANCE ANALYSIS
+================================================================================
+
+TIME COMPLEXITY:
+O(n) - Analysis will be provided based on specific operation
+
+SPACE COMPLEXITY:
+O(1) - Analysis will be provided based on specific operation
+
+================================================================================
+                               PRACTICAL APPLICATIONS
+================================================================================
+
+Real-world applications of 05_Shifting_Left in Arrays will be listed here.
+
+================================================================================
+                              BEST PRACTICES
+================================================================================
+
+Best practices for implementing 05_Shifting_Left efficiently.
+
+================================================================================
+                             COMMON PITFALLS
+================================================================================
+
+Common mistakes to avoid when implementing 05_Shifting_Left.
+
+================================================================================

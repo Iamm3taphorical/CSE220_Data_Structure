@@ -1,0 +1,21 @@
+/*
+ * 05_Traversal_Forward_Backward.cpp
+ * 
+ * This file demonstrates 05 traversal forward backward operations 
+ * implemented from scratch without using built-in functions.
+ * Each operation is thoroughly commented for educational purposes.
+ */
+
+#include <iostream>
+#include <vector>
+#include <string>
+
+// C++-specific implementation code will be added here
+
+int main() {
+    std::cout << "=== 05 TRAVERSAL FORWARD BACKWARD DEMONSTRATION ===" << std::endl;
+    
+    // Demo code
+    
+    return 0;
+}

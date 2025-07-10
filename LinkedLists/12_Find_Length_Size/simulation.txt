@@ -1,0 +1,42 @@
+================================================================================
+                        12 FIND LENGTH SIZE - STEP-BY-STEP SIMULATION
+================================================================================
+
+OVERVIEW:
+This simulation demonstrates how 12 find length size works internally, showing
+each step of the process with detailed explanations and memory representations.
+
+TOPIC: LinkedLists
+OPERATION: 12 Find Length Size
+
+Detailed step-by-step simulation for 12_Find_Length_Size will be added here.
+
+================================================================================
+                              PERFORMANCE ANALYSIS
+================================================================================
+
+TIME COMPLEXITY:
+O(n) - Analysis will be provided based on specific operation
+
+SPACE COMPLEXITY:
+O(1) - Analysis will be provided based on specific operation
+
+================================================================================
+                               PRACTICAL APPLICATIONS
+================================================================================
+
+Real-world applications of 12_Find_Length_Size in LinkedLists will be listed here.
+
+================================================================================
+                              BEST PRACTICES
+================================================================================
+
+Best practices for implementing 12_Find_Length_Size efficiently.
+
+================================================================================
+                             COMMON PITFALLS
+================================================================================
+
+Common mistakes to avoid when implementing 12_Find_Length_Size.
+
+================================================================================

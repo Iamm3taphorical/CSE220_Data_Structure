@@ -1,0 +1,297 @@
+================================================================================
+                        QUEUE ENQUEUE & DEQUEUE OPERATIONS
+================================================================================
+
+OVERVIEW:
+A Queue is a linear data structure that follows the FIFO (First In, First Out) 
+principle. Elements are added at one end (rear) and removed from the other end 
+(front). The two fundamental operations are:
+- ENQUEUE: Add an element to the rear of the queue
+- DEQUEUE: Remove an element from the front of the queue
+
+================================================================================
+                              QUEUE STRUCTURE
+================================================================================
+
+COMPONENTS:
+- ARRAY: Storage for queue elements
+- FRONT: Index pointing to the first element
+- REAR: Index pointing to the last element
+- SIZE: Current number of elements
+- CAPACITY: Maximum number of elements the queue can hold
+
+VISUAL REPRESENTATION:
+    Front                           Rear
+      ↓                              ↓
+    [10][20][30][40][50][ ][ ][ ][ ][ ]
+     0   1   2   3   4   5   6   7   8   9
+
+================================================================================
+                            ENQUEUE OPERATION
+================================================================================
+
+DEFINITION:
+Enqueue is the operation of adding an element to the rear (back) of the queue.
+
+ALGORITHM:
+1. Check if queue is full
+2. If full, display overflow message and return
+3. If not full:
+   - Increment rear pointer (with circular wrap-around)
+   - Insert element at rear position
+   - Increment size counter
+   - Display success message
+
+STEPS IN DETAIL:
+1. OVERFLOW CHECK:
+   - Compare size with capacity
+   - If size == capacity, queue is full
+
+2. REAR POINTER UPDATE:
+   - rear = (rear + 1) % capacity
+   - Modulo operation ensures circular behavior
+
+3. ELEMENT INSERTION:
+   - array[rear] = new_element
+   - Place element at the rear position
+
+4. SIZE INCREMENT:
+   - size = size + 1
+   - Update the count of elements
+
+TIME COMPLEXITY: O(1) - Constant time
+SPACE COMPLEXITY: O(1) - No additional space required
+
+================================================================================
+                            DEQUEUE OPERATION
+================================================================================
+
+DEFINITION:
+Dequeue is the operation of removing an element from the front of the queue.
+
+ALGORITHM:
+1. Check if queue is empty
+2. If empty, display underflow message and return
+3. If not empty:
+   - Store element at front position
+   - Increment front pointer (with circular wrap-around)
+   - Decrement size counter
+   - Return the stored element
+
+STEPS IN DETAIL:
+1. UNDERFLOW CHECK:
+   - Compare size with 0
+   - If size == 0, queue is empty
+
+2. ELEMENT RETRIEVAL:
+   - element = array[front]
+   - Save the element to be returned
+
+3. FRONT POINTER UPDATE:
+   - front = (front + 1) % capacity
+   - Modulo operation ensures circular behavior
+
+4. SIZE DECREMENT:
+   - size = size - 1
+   - Update the count of elements
+
+TIME COMPLEXITY: O(1) - Constant time
+SPACE COMPLEXITY: O(1) - No additional space required
+
+================================================================================
+                               CIRCULAR QUEUE
+================================================================================
+
+WHY CIRCULAR?
+- Prevents array wastage when front moves forward
+- Allows reuse of array positions
+- Maximizes space utilization
+
+CIRCULAR INDEXING:
+- Use modulo operation: (index + 1) % capacity
+- When index reaches capacity-1, it wraps to 0
+- Ensures continuous circular movement
+
+EXAMPLE:
+Array size: 5
+Front: 3, Rear: 1
+Next rear position: (1 + 1) % 5 = 2
+Next front position: (3 + 1) % 5 = 4
+
+================================================================================
+                            PRACTICAL APPLICATIONS
+================================================================================
+
+OPERATING SYSTEMS:
+- Process scheduling (CPU scheduling)
+- Print queue management
+- Buffer management for I/O operations
+
+COMPUTER NETWORKS:
+- Packet routing and switching
+- Network traffic management
+- Data transmission queues
+
+REAL-WORLD SYSTEMS:
+- Customer service systems (call centers)
+- Ticket booking systems
+- Task scheduling in applications
+
+PROGRAMMING:
+- Breadth-First Search (BFS) algorithms
+- Level-order tree traversal
+- Simulation of real-world queues
+
+================================================================================
+                              ADVANTAGES
+================================================================================
+
+1. FIFO GUARANTEE:
+   - Maintains order of insertion
+   - Fair processing of elements
+
+2. EFFICIENT OPERATIONS:
+   - O(1) insertion and deletion
+   - Constant time complexity
+
+3. MEMORY EFFICIENT:
+   - Uses array for storage
+   - No additional pointers needed
+
+4. PREDICTABLE BEHAVIOR:
+   - First element added is first to be removed
+   - No random access confusion
+
+5. SIMPLICITY:
+   - Easy to understand and implement
+   - Clear operational semantics
+
+================================================================================
+                              DISADVANTAGES
+================================================================================
+
+1. FIXED SIZE:
+   - Array-based implementation has size limit
+   - Cannot grow dynamically
+
+2. MEMORY WASTAGE:
+   - Unused array positions when not full
+   - Space allocated even when not needed
+
+3. NO RANDOM ACCESS:
+   - Cannot access middle elements
+   - Only front and rear operations allowed
+
+4. OVERFLOW/UNDERFLOW:
+   - Possible overflow when full
+   - Possible underflow when empty
+
+================================================================================
+                            IMPLEMENTATION VARIANTS
+================================================================================
+
+1. SIMPLE QUEUE:
+   - Basic implementation with front and rear pointers
+   - May waste space as front moves forward
+
+2. CIRCULAR QUEUE:
+   - Reuses array positions using modulo arithmetic
+   - Efficient space utilization
+
+3. DYNAMIC QUEUE:
+   - Resizes array when needed
+   - Eliminates fixed size limitation
+
+4. LINKED LIST QUEUE:
+   - Uses nodes and pointers
+   - No size limitations
+
+================================================================================
+                             BEST PRACTICES
+================================================================================
+
+1. ALWAYS CHECK BOUNDS:
+   - Verify queue is not full before enqueue
+   - Verify queue is not empty before dequeue
+
+2. USE CIRCULAR INDEXING:
+   - Implement modulo arithmetic for efficiency
+   - Maximize array utilization
+
+3. MAINTAIN SIZE COUNTER:
+   - Keep track of current element count
+   - Simplifies empty/full checking
+
+4. HANDLE EDGE CASES:
+   - Empty queue operations
+   - Full queue operations
+   - Single element scenarios
+
+5. CLEAR ERROR MESSAGES:
+   - Provide meaningful feedback
+   - Help in debugging and maintenance
+
+================================================================================
+                             COMMON MISTAKES
+================================================================================
+
+1. FORGETTING BOUNDS CHECK:
+   - Leads to array overflow/underflow
+   - Causes runtime errors
+
+2. INCORRECT POINTER UPDATES:
+   - Not using modulo for circular behavior
+   - Leads to incorrect indexing
+
+3. NOT UPDATING SIZE:
+   - Incorrect empty/full detection
+   - Logic errors in operations
+
+4. IMPROPER INITIALIZATION:
+   - Wrong initial values for front/rear
+   - Causes unexpected behavior
+
+================================================================================
+                            COMPLEXITY ANALYSIS
+================================================================================
+
+TIME COMPLEXITY:
+- Enqueue: O(1) - Constant time insertion
+- Dequeue: O(1) - Constant time removal
+- isEmpty: O(1) - Simple comparison
+- isFull: O(1) - Simple comparison
+- Display: O(n) - Must traverse all elements
+
+SPACE COMPLEXITY:
+- Array storage: O(n) - Where n is capacity
+- Additional variables: O(1) - Constant space
+- Total: O(n) - Linear space complexity
+
+EFFICIENCY:
+- Very efficient for sequential access
+- Optimal for FIFO operations
+- Minimal memory overhead
+
+================================================================================
+                              TESTING SCENARIOS
+================================================================================
+
+1. NORMAL OPERATIONS:
+   - Enqueue several elements
+   - Dequeue several elements
+   - Verify FIFO order
+
+2. BOUNDARY CONDITIONS:
+   - Enqueue to full queue
+   - Dequeue from empty queue
+   - Single element operations
+
+3. CIRCULAR BEHAVIOR:
+   - Fill queue, dequeue some, enqueue again
+   - Verify circular indexing works
+
+4. MIXED OPERATIONS:
+   - Random sequence of enqueue/dequeue
+   - Verify consistency and correctness
+
+================================================================================
